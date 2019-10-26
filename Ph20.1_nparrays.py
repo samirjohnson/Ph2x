@@ -1,6 +1,7 @@
 import sys
 import math
 import matplotlib.pyplot as plt
+import numpy as np
     
 def xyzfunctions(fx, fy, Ax, Ay, phi, t):
     X = Ax * math.cos(2*math.pi * fx * t)
