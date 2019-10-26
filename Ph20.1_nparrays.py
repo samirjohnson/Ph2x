@@ -25,12 +25,14 @@ for n in range(N):
     data_list[3][n] = n * dt
     print("X: {} Y: {} Z: {}").format(data_list[0][n], data_list[1][n], data_list[2][n])
     
-plt.plot(data_list[3], data_list[2])
-plt.xlabel("t")
-plt.ylabel("Z(t)")
-plt.show()
+if sys.argv[8] == 1:
+    plt.plot(data_list[3], data_list[2])
+    plt.xlabel("t")
+    plt.ylabel("Z(t)")
+    plt.show()
 
-plt.plot(data_list[0], data_list[1])
-plt.xlabel("X(t)")
-plt.ylabel("Y(t)")
-plt.show()
+else if sys.argv[8] == 2:
+    plt.plot(data_list[0], data_list[1])
+    plt.xlabel("X(t)")
+    plt.ylabel("Y(t)")
+    plt.show()
